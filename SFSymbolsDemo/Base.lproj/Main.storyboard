@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="53O-XT-l1w">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HvO-PG-lNq">
+            <objects>
+                <navigationController id="53O-XT-l1w" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vq4-GW-J6v">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="U9i-LP-YTP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zy2-h5-GL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-344" y="-14"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SFSymbolsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRD-2M-cqo">
+                                <rect key="frame" x="0.0" y="376" width="393" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPh-EY-Xkj">
+                                        <rect key="frame" x="166.33333333333334" y="0.0" width="60.666666666666657" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="UIKit"/>
+                                        <connections>
+                                            <action selector="tappedUIKit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PxU-bZ-zEl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU4-Xd-gic">
+                                        <rect key="frame" x="157.33333333333334" y="65" width="78.666666666666657" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SwiftUI"/>
+                                        <connections>
+                                            <action selector="tappedSwiftUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dDQ-D4-3NC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qU4-Xd-gic" firstAttribute="top" secondItem="HPh-EY-Xkj" secondAttribute="bottom" constant="30" id="9lr-Wc-cTH"/>
+                                    <constraint firstItem="HPh-EY-Xkj" firstAttribute="centerX" secondItem="oRD-2M-cqo" secondAttribute="centerX" id="beg-jc-pvd"/>
+                                    <constraint firstItem="qU4-Xd-gic" firstAttribute="centerX" secondItem="oRD-2M-cqo" secondAttribute="centerX" id="glf-iS-Ico"/>
+                                    <constraint firstAttribute="bottom" secondItem="qU4-Xd-gic" secondAttribute="bottom" id="hfX-ZY-fSg"/>
+                                    <constraint firstItem="HPh-EY-Xkj" firstAttribute="top" secondItem="oRD-2M-cqo" secondAttribute="top" id="wOy-Ep-ZtI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oRD-2M-cqo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GED-E9-T9Y"/>
+                            <constraint firstItem="oRD-2M-cqo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tvz-Ks-2Jw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oRD-2M-cqo" secondAttribute="trailing" id="iT5-bh-QFX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="eSo-iI-Bve"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="-14"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
